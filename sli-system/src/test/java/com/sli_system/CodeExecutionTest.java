@@ -21,8 +21,7 @@ public class CodeExecutionTest extends webDriverset {
 		webdriverset.driver.findElement(By.xpath(".//*[@id='sli_search_box']/form/input[1]")).sendKeys("red");
 		webdriverset.driver.findElement(By.xpath(".//*[@id='sli_search_box']/form/input[2]")).click();
 		webdriverset.driver.getPageSource().contains("Valentines");
-		String bodyText = webdriverset.driver
-				.findElement(By.xpath(".//*[@id='sli_search_suggestions_header']/div/a[2]")).getText();
+		String bodyText = webdriverset.driver.findElement(By.xpath(".//*[@id='sli_search_suggestions_header']/div/a[2]")).getText();
 		System.out.println(bodyText);
 		Assert.assertTrue("Text not found!", bodyText.contains("Valentines"));
 	}
