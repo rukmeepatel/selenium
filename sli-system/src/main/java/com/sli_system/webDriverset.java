@@ -17,6 +17,7 @@ public class webDriverset
 		driver = new ChromeDriver();
 		driver.manage().window().fullscreen();
 		driver.get(URL);
+		System.out.println(URL);
 	}	
 
 }

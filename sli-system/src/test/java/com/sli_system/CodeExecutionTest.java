@@ -16,6 +16,7 @@ public class CodeExecutionTest extends webDriverset {
 	public void Execute_success() throws InterruptedException {
 		
 		webdriverset.settingChromeDriver();
+		
 		webdriverset.driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
 		
 		webdriverset.driver.findElement(By.xpath(".//*[@id='sli_search_box']/form/input[1]")).sendKeys("red");

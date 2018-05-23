@@ -15,8 +15,9 @@ public class Newtestcase {
 
 	@BeforeClass
 	public static void settingWebdriver() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\Newfolder2\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/sanjay/Downloads/chromedriver");
 		driver = new ChromeDriver();
+		driver.manage().window().fullscreen();
 		driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
 	}
 
