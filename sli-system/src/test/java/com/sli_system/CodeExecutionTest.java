@@ -13,7 +13,7 @@ import org.openqa.selenium.By;
 public class CodeExecutionTest extends webDriverset {
 	webDriverset webdriverset = new webDriverset();
 	@Test
-	public void Execute_success() throws InterruptedException {
+	public void searchRedValidateValentines() throws InterruptedException {
 		
 		webdriverset.settingChromeDriver();
 		
